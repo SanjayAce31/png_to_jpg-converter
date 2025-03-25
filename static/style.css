@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* File Upload Label */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #ff6b6b;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.custom-file-upload:hover {
+    background: #ff4f4f;
+}
+
+/* Hide Default File Input */
+input[type="file"] {
+    display: none;
+}
+
+/* Submit Button */
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Flash Messages */
+.messages {
+    margin: 15px 0;
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Success Message */
+.alert.success {
+    background: #28a745;
+    color: white;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+/* Error Message */
+.alert.error {
+    background: #dc3545;
+    color: white;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .alert {
+        font-size: 12px;
+    }
+}
